@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crude</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="w-75 m-auto py-5">
+
+        <div class="alert alert-danger style " id="alert"></div>
+
+        <form class="customization">
+            <div class="form-group">
+                <label for="productName">productName :</label>
+                <input class="form-control" type="name" id="productName">
+            </div>
+
+            <div class="form-group">
+                <label for="productPrice">productPrice :</label>
+                <input class="form-control" type="number" id="productPrice">
+            </div>
+
+            <div class="form-group">
+                <label for="productCatgory">productCatgory :</label>
+                <input class="form-control" type="name" id="productCatgory">
+            </div>
+
+            <div class="form-group">
+                <label for="productDesc">productDesc :</label>
+                <textarea class="form-control" type="text" id="productDesc"></textarea>
+            </div>
+
+        </form>
+        <button onclick="addProduct()" class="btn btn-outline-primary" id="addProduct"> Add Product</button>
+
+    </div>
+
+
+    <div class="w-50 m-auto py-5">
+        <input onkeyup="searchBar(this.value)" placeholder="search ... " type="text" class="form-control search-style">
+    </div>
+    <table class="table my-5 w-75 m-auto">
+        <thead class="text-center">
+            <th class="styleization">index</th>
+            <th class="styleization">productName</th>
+            <th class="styleization">productPrice</th>
+            <th class="styleization">productCatgory</th>
+            <th class="styleization">productDesc</th>
+            <th class="styleization">update</th>
+            <th class="styleization">delet</th>
+        </thead>
+
+        <tbody class="text-center" id="tableBody">
+
+
+        </tbody>
+    </table>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
